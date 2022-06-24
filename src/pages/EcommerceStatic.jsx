@@ -1,7 +1,11 @@
 import React from "react";
+import { useStatusContext } from "../context/ContextProvider";
 
 const EcommerceStatic = () => {
-  return <div>EcommerceStatic</div>;
+  const { activeMenu, setActiveMenu } = useStatusContext();
+  return (
+    <div className={`${activeMenu ? "ml-72" : "w-full"}`}>EcommerceStatic</div>
+  );
 };
 
 export default EcommerceStatic;
