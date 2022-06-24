@@ -24,10 +24,7 @@ function App() {
           <Route path="/signup" element={<SignUp />}></Route>
 
           {/* admin dashboard */}
-          <Route
-            path="/ecommerce-admin-dashboard"
-            element={<EcommerceStatic />}
-          ></Route>
+          <Route path="/Ecommerce" element={<EcommerceStatic />}></Route>
 
           {/* category */}
           <Route path="/categories" element={<Categories />}></Route>
