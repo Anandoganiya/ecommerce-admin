@@ -1,13 +1,19 @@
 import React from "react";
 import { Sidebar, Navbar } from "../components";
 import { useStatusContext } from "../context/ContextProvider";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import {
   Categories,
   Products,
+  EditProduct,
+  AddProduct,
+  ProductDetails,
   Orders,
+  OrderDetails,
   EcommerceStatic,
   Customers,
+  EditCustomer,
+  CustomerDetails,
 } from "../pages";
 
 const DashBoard = () => {
@@ -29,9 +35,8 @@ const DashBoard = () => {
         </div>
       </div>
       <Routes>
-        {/* admin dashboard */}
-        <Route path="/Ecommerce" element={<EcommerceStatic />}></Route>
-
+        {/* Ecommnerce statictics */}
+        <Route path="/" element={<EcommerceStatic />}></Route>
         {/* category */}
         <Route path="/categories" element={<Categories />}></Route>
         <Route
@@ -46,21 +51,21 @@ const DashBoard = () => {
 
         {/* products */}
         <Route path="/products" element={<Products />}></Route>
-        <Route path="/product-details" element={<div>product</div>}></Route>
+        <Route path="/product-details" element={<ProductDetails />}></Route>
         <Route
           path="/edit-product/:productId"
-          element={<div>product</div>}
+          element={<EditProduct />}
         ></Route>
-        <Route path="/add-product" element={<div>product</div>}></Route>
+        <Route path="/add-product" element={<AddProduct />}></Route>
 
         {/* customers */}
         <Route path="/customers" element={<Customers />}></Route>
-        <Route path="/edit-customer" element={<div>customers</div>}></Route>
-        <Route path="/customer-details" element={<div>customer</div>}></Route>
+        <Route path="/edit-customer" element={<EditCustomer />}></Route>
+        <Route path="/customer-details" element={<CustomerDetails />}></Route>
 
         {/* orders */}
         <Route path="/orders" element={<Orders />}></Route>
-        <Route path="/order-details" element={<div>order</div>}></Route>
+        <Route path="/order-details" element={<OrderDetails />}></Route>
       </Routes>
     </>
   );

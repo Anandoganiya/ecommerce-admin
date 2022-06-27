@@ -23,7 +23,7 @@ const Navbar = () => {
   }, [resize]);
   return (
     <header className="relative">
-      <nav className="flex  justify-between p-2 items-center">
+      <nav className="flex justify-between p-2 items-center">
         <div
           className="text-xl cursor-pointer"
           onClick={() => setActiveMenu(!activeMenu)}
@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="w-[4rem] mr-3">
             <img
               className="w-full  rounded-full"
-              src="default.png"
+              src="/default.png"
               alt="default"
             />
           </div>

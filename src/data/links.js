@@ -9,6 +9,7 @@ export const links = [
       {
         name: "Ecommerce",
         icon: <FiShoppingBag />,
+        slugName: "",
       },
     ],
   },
@@ -18,6 +19,7 @@ export const links = [
       {
         name: "Products",
         icon: <BsFillInboxesFill />,
+        slugName: "products",
       },
     ],
   },
@@ -27,6 +29,7 @@ export const links = [
       {
         name: "Customers",
         icon: <FaUsers />,
+        slugName: "customers",
       },
     ],
   },
@@ -36,6 +39,7 @@ export const links = [
       {
         name: "Orders",
         icon: <FaClipboardList />,
+        slugName: "orders",
       },
     ],
   },
@@ -45,6 +49,7 @@ export const links = [
       {
         name: "Categories",
         icon: <MdCategory />,
+        slugName: "categories",
       },
     ],
   },
