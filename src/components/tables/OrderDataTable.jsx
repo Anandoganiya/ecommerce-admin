@@ -6,7 +6,10 @@ import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 const OrderDataTable = () => {
   return (
-    <div style={{ height: 400, width: 910 }}>
+    <div
+      style={{ height: 400, width: 950 }}
+      className="rounded-xl border-gray-dark shadow-xl p-4"
+    >
       <DataGrid
         rows={orderRow}
         columns={orderCol}

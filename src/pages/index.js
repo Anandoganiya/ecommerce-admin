@@ -3,6 +3,8 @@ export { default as LogIn } from "./LogIn";
 export { default as SignUp } from "./SignUp";
 // dashbard pages
 export { default as Categories } from "./Categories";
+export { default as AddCategory } from "./AddCategory";
+export { default as EditCategory } from "./EditCategory";
 export { default as Customers } from "./Customers";
 export { default as EditCustomer } from "./EditCustomer";
 export { default as CustomerDetails } from "./CustomerDetails";

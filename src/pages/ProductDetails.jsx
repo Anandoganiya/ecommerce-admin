@@ -6,11 +6,11 @@ const ProductDetails = () => {
     <div
       className={`${
         activeMenu ? "ml-72" : "w-full"
-      }  mt-4 flex justify-center  gap-1`}
+      }  mt-4 flex justify-center gap-1 `}
     >
-      <div className="w-full flex justify-center">
-        <div className="border w-[95%]  rounded shadow p-8">
-          <h2 className="text-2xl border-b pb-4 font-extrabold text-black">
+      <div className="w-full flex justify-center ">
+        <div className="w-[95%]  p-8 rounded-xl border-gray-dark shadow-2xl">
+          <h2 className="text-2xl border-b-2 border-b-gray-medium  pb-4 font-extrabold text-black ">
             Product Details
           </h2>
           <div className="flex w-full justify-between">
@@ -50,34 +50,34 @@ const ProductDetails = () => {
             <div className="flex flex-col w-full">
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Product Name:
                   </span>
-                  snow
+                  <span className="text-gray-dark">snow</span>
                 </p>
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Category:
                   </span>
-                  Drinks
+                  <span className="text-gray-dark">Drinks</span>
                 </p>
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Product Type:
                   </span>
-                  Grocery
+                  <span className="text-gray-dark">Grocery</span>
                 </p>
               </div>
               <div className="w-[100%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Product Description:
                   </span>
-                  <div>
+                  <div className="text-gray-dark">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Odit, quo?
                   </div>
@@ -85,34 +85,35 @@ const ProductDetails = () => {
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Unit(kg):
                   </span>
-                  2
+                  <span className="text-gray-dark">2</span>
+                  <span className="text-gray-dark">2</span>
                 </p>
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Product Quantity:
                   </span>
-                  2
+                  <span className="text-gray-dark">2</span>
                 </p>
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Product Price:
                   </span>
-                  200
+                  <span className="text-gray-dark">200</span>
                 </p>
               </div>
               <div className="w-[50%]  mb-1">
                 <p className="text-xl font-semibold text-gray-500  p-2">
-                  <span className="text-xl mr-2 font-semibold text-gray-500">
+                  <span className="mr-2  text-xl font-extrabold text-gray-medium">
                     Sale Price:
                   </span>
-                  100
+                  <span className="text-gray-dark">100</span>
                 </p>
               </div>
             </div>

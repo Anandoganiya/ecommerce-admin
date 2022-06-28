@@ -13,7 +13,7 @@ const Products = () => {
         <div className="flex justify-between w-[870px] mb-4">
           <h2 className="text-2xl font-extrabold text-black">Products</h2>
           <Link to={"/add-product"}>
-            <button className="rounded-lg flex justify-between  gap-1 hover:bg-sky-600 items-center px-4 py-2 bg-sky-500 font-semibold text-lg text-white">
+            <button className="rounded-lg flex justify-between  gap-1 hover:bg-blue-light items-center px-4 py-2 bg-blue font-semibold text-lg text-white">
               <BsPlusLg />
               <span>Add Product</span>
             </button>

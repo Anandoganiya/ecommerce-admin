@@ -15,7 +15,7 @@ const BarGraph = () => {
   return (
     <>
       <BarChart
-        width={500}
+        width={630}
         height={300}
         data={data}
         margin={{

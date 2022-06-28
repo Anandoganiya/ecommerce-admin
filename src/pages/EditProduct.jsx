@@ -36,12 +36,9 @@ const EditProduct = () => {
         activeMenu ? "ml-72" : "w-full"
       }  mt-4 flex justify-center  gap-1`}
     >
-      <div className="w-full flex justify-center m-4">
-        <form
-          className="border w-full rounded shadow p-8"
-          onSubmit={handleForm}
-        >
-          <h2 className="text-2xl border-b pb-4 font-extrabold text-black">
+      <div className="w-full flex justify-center m-4  rounded-xl border-gray-dark shadow-2xl">
+        <form className=" w-full rounded shadow p-8" onSubmit={handleForm}>
+          <h2 className="text-2xl border-b-2 border-b-gray-medium  pb-4 font-extrabold text-black">
             Edit Product
           </h2>
           <div className="flex w-full justify-between">
@@ -49,9 +46,9 @@ const EditProduct = () => {
               <div className="w-full  mt-4">
                 <label
                   htmlFor="imgUpload"
-                  className="text-xl font-semibold text-gray-500 cursor-pointer"
+                  className="text-xl font-semibold text-gray-medium cursor-pointer"
                 >
-                  <div className="rounded-full w-[3.5rem] flex justify-center items-center bg-gray-300 p-4 hover:bg-gray-500 hover:text-white ">
+                  <div className="rounded-full w-[3.5rem] flex justify-center items-center bg-gray p-4 hover:bg-gray-medium text-white ">
                     <FiCamera />
                   </div>
                 </label>
@@ -81,12 +78,12 @@ const EditProduct = () => {
               <div className="w-full mb-4">
                 <label
                   htmlFor="productName"
-                  className="text-xl font-semibold text-gray-500"
+                  className="text-xl font-semibold text-gray-medium"
                 >
                   Product Name
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="productName"
                   value={"snow"}
@@ -97,14 +94,14 @@ const EditProduct = () => {
               <div className="w-full mb-4">
                 <label
                   htmlFor="status"
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                 >
                   Category
                 </label>
                 <select
                   name=""
                   id="status"
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   onChange={() => {}}
                 >
                   <option value="active">Fish and Meat</option>
@@ -114,14 +111,14 @@ const EditProduct = () => {
               <div className="w-full mb-4">
                 <label
                   htmlFor="status"
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                 >
                   Product Type
                 </label>
                 <select
                   name=""
                   id="status"
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   onChange={() => {}}
                 >
                   <option value="active">Grocery</option>
@@ -130,13 +127,13 @@ const EditProduct = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                   htmlFor="desc"
                 >
                   Product Description
                 </label>
                 <textarea
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   id="desc"
                   cols="20"
                   rows="2"
@@ -144,13 +141,13 @@ const EditProduct = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                   htmlFor="unit"
                 >
                   Unit (kg/pc/lb/ml/g...etc)
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="unit"
                   value={26}
@@ -159,13 +156,13 @@ const EditProduct = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                   htmlFor="stock"
                 >
                   Product Quantity
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="stock"
                   value={26}
@@ -174,13 +171,13 @@ const EditProduct = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                   htmlFor="price"
                 >
                   Product Price
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="price"
                   value={26}
@@ -189,13 +186,13 @@ const EditProduct = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-semibold text-gray-medium mb-4"
                   htmlFor="salePrice"
                 >
                   Sale Price
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="salePrice"
                   value={26}
@@ -203,7 +200,7 @@ const EditProduct = () => {
                 />
               </div>
               <div>
-                <button className="rounded-lg py-4 px-8 bg-sky-400 text-semibold text-white text-xl">
+                <button className="rounded-lg py-4 px-8 bg-sky-400 bg-blue-light text-white hover:bg-blue  text-xl">
                   Update
                 </button>
               </div>

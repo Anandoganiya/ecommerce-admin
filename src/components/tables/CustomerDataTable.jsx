@@ -8,7 +8,10 @@ import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 const CustomerDataTable = () => {
   return (
-    <div style={{ height: 400, width: 750 }}>
+    <div
+      style={{ height: 450, width: 800 }}
+      className="rounded-xl border-gray-dark shadow-xl p-4"
+    >
       <DataGrid
         rows={customerRow}
         columns={customerCol}

@@ -4,6 +4,8 @@ import { useStatusContext } from "../context/ContextProvider";
 import { Routes, Route } from "react-router-dom";
 import {
   Categories,
+  AddCategory,
+  EditCategory,
   Products,
   EditProduct,
   AddProduct,
@@ -40,14 +42,10 @@ const DashBoard = () => {
         {/* category */}
         <Route path="/categories" element={<Categories />}></Route>
         <Route
-          path="/categories-list"
-          element={<div>category list</div>}
-        ></Route>
-        <Route
           path="/edit-category/:categoryId"
-          element={<div>category</div>}
+          element={<EditCategory />}
         ></Route>
-        <Route path="/add-category" element={<div>category</div>}></Route>
+        <Route path="/add-category" element={<AddCategory />}></Route>
 
         {/* products */}
         <Route path="/products" element={<Products />}></Route>
