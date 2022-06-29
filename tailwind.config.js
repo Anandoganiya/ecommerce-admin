@@ -20,12 +20,9 @@ module.exports = {
       "green-dark": "#00C292",
       yellow: "#ffc82c",
       white: "#fff",
+      red: "#dc2626",
     },
-    extend: {
-      // backgroundImage: {
-      //   "earning-card": "url('static.png')",
-      // },
-    },
+    extend: {},
   },
   plugins: [],
 };

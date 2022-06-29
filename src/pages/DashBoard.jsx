@@ -8,6 +8,7 @@ import {
   EditCategory,
   Products,
   EditProduct,
+  EditProfile,
   AddProduct,
   ProductDetails,
   Orders,
@@ -39,6 +40,7 @@ const DashBoard = () => {
       <Routes>
         {/* Ecommnerce statictics */}
         <Route path="/" element={<EcommerceStatic />}></Route>
+        <Route path="/edit-profile" element={<EditProfile />}></Route>
         {/* category */}
         <Route path="/categories" element={<Categories />}></Route>
         <Route

@@ -9,7 +9,7 @@ const ProductDetails = () => {
       }  mt-4 flex justify-center gap-1 `}
     >
       <div className="w-full flex justify-center ">
-        <div className="w-[95%]  p-8 rounded-xl border-gray-dark shadow-2xl">
+        <div className="w-[95%]  p-8 rounded-xl bg-white border-gray-dark shadow-2xl">
           <h2 className="text-2xl border-b-2 border-b-gray-medium  pb-4 font-extrabold text-black ">
             Product Details
           </h2>

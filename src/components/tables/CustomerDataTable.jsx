@@ -10,7 +10,7 @@ const CustomerDataTable = () => {
   return (
     <div
       style={{ height: 450, width: 800 }}
-      className="rounded-xl border-gray-dark shadow-xl p-4"
+      className="rounded-xl border-gray-dark shadow-xl p-4 bg-white"
     >
       <DataGrid
         rows={customerRow}

@@ -11,12 +11,12 @@ const EditCustomer = () => {
         activeMenu ? "ml-72" : "w-full"
       }  mt-4 flex justify-center  gap-1`}
     >
-      <div className="w-full flex justify-center m-4">
+      <div className="w-full flex justify-center m-4 bg-white">
         <form
-          className="border w-full rounded shadow p-8"
+          className="p-8 w-full rounded-xl border-gray-dark shadow-2xl"
           onSubmit={handleForm}
         >
-          <h2 className="text-2xl border-b pb-4 font-extrabold text-black">
+          <h2 className="text-2xl border-b-2 border-b-gray-medium  pb-4 font-extrabold text-black">
             Edit Customer
           </h2>
           <div className="flex w-full justify-between">
@@ -29,32 +29,34 @@ const EditCustomer = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full mt-1">
               <div className="w-full mb-4">
                 <label
                   htmlFor="username"
-                  className="text-xl font-semibold text-gray-500"
+                  className="text-xl font-extrabold text-gray-medium"
                 >
                   Username
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="username"
                   value={"snow"}
+                  onChange={() => {}}
                 />
               </div>
               <div className="w-full mb-4">
                 <label
                   htmlFor="status"
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-extrabold text-gray-medium"
                 >
                   Status
                 </label>
                 <select
                   name=""
                   id="status"
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
+                  onChange={() => {}}
                 >
                   <option value="active">Active</option>
                   <option value="active">Passive</option>
@@ -62,35 +64,37 @@ const EditCustomer = () => {
               </div>
               <div className="w-full mb-4">
                 <label
-                  className="text-xl font-semibold text-gray-500 mb-4"
+                  className="text-xl font-extrabold text-gray-medium"
                   htmlFor="age"
                 >
                   Age
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   id="age"
                   value={26}
+                  onChange={() => {}}
                 />
               </div>
               <div className="w-full mb-4">
                 <label
                   htmlFor="email"
-                  className="text-xl font-semibold text-gray-500"
+                  className="text-xl font-extrabold text-gray-medium"
                 >
                   Email
                 </label>
                 <input
-                  className="border outline-none w-full text-xl font-semibold text-gray-500 rounded-lg p-2"
+                  className="border outline-none w-full text-xl font-semibold text-gray-dark rounded-lg p-2"
                   type="text"
                   disabled
                   id="email"
                   value={"example@gmail.com"}
+                  onChange={() => {}}
                 />
               </div>
               <div>
-                <button className="rounded-lg py-4 px-8 bg-sky-400 text-semibold text-white text-xl">
+                <button className="rounded-lg py-4 px-8 bg-sky-400 bg-blue-light text-white hover:bg-blue text-xl">
                   Update
                 </button>
               </div>

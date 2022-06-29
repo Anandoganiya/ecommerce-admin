@@ -15,3 +15,4 @@ export { default as AddProduct } from "./AddProduct";
 export { default as EditProduct } from "./EditProduct";
 export { default as ProductDetails } from "./ProductDetails";
 export { default as EcommerceStatic } from "./EcommerceStatic";
+export { default as EditProfile } from "./EditProfile";

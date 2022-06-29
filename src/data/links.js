@@ -7,7 +7,7 @@ export const links = [
     title: "Dashboard",
     pageLink: [
       {
-        name: "Ecommerce",
+        name: "eCommerce",
         icon: <FiShoppingBag />,
         slugName: "",
       },

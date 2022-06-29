@@ -8,6 +8,7 @@ const cardData = [
     cardIcon: <BsCurrencyDollar />,
     IconColor: "bg-green-dark",
     cardWidth: "md:w-96",
+    cardBgImg: "card_background",
   },
   {
     title: "Customers",

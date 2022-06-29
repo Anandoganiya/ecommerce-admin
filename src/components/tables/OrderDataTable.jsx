@@ -8,7 +8,7 @@ const OrderDataTable = () => {
   return (
     <div
       style={{ height: 400, width: 950 }}
-      className="rounded-xl border-gray-dark shadow-xl p-4"
+      className="rounded-xl border-gray-dark shadow-xl p-4 bg-white"
     >
       <DataGrid
         rows={orderRow}

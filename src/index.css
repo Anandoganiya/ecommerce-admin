@@ -7,8 +7,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fafbfb;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.card_background {
+  background-image: url("../public/user.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }

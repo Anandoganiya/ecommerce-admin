@@ -2,15 +2,14 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { FiEdit2 } from "react-icons/fi";
 import { MdDeleteOutline } from "react-icons/md";
-import { GrFormView } from "react-icons/gr";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 const CategoryDataTable = () => {
   return (
     <div
-      style={{ height: 300, width: 560 }}
-      className="rounded-xl border-gray-dark shadow-xl p-4"
+      style={{ height: 350, width: 600 }}
+      className="rounded-xl border-gray-dark shadow-xl p-4 bg-white"
     >
       <DataGrid
         rows={categoryRow}

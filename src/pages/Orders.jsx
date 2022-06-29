@@ -8,7 +8,7 @@ const Orders = () => {
       className={`${activeMenu ? "ml-72" : "w-full"} mt-4 flex justify-center`}
     >
       <div className="ml-4">
-        <h2 className="text-2xl font-extrabold pb-4 text-black">order</h2>
+        <h2 className="text-2xl font-extrabold pb-4 text-black">Order</h2>
         <OrderDataTable />
       </div>
     </div>

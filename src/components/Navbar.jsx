@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useStatusContext } from "../context/ContextProvider";
+import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
 import { FiSettings } from "react-icons/fi";
 import { HiOutlineLogout } from "react-icons/hi";
+import { FiShoppingBag } from "react-icons/fi";
 
 const Navbar = () => {
   const { activeMenu, setActiveMenu, isClicked, setIsClicked } =
@@ -51,7 +52,9 @@ const Navbar = () => {
               alt="default"
             />
           </div>
-          <div className=" font-bold mr-1">Hi, name</div>
+          <div className=" text-gray-dark font-bold text-xl cursor-pointer">
+            Hi, name
+          </div>
           <div className="text-lg ">
             <IoIosArrowDown />
           </div>
@@ -64,18 +67,24 @@ const Navbar = () => {
 
 const NavMenu = () => {
   return (
-    <div className=" rounded-lg bg-white border-gray-light border absolute w-[14rem] shadow-lg right-0 mr-8 mt-4">
+    <div className="z-10 rounded-lg bg-white border-gray-light  border absolute w-[14rem] shadow-lg right-0 mr-8 mt-4">
       <div className="hover:bg-gray-light flex items-center gap-2  cursor-pointer border-b border-gray-medium  text-lg w-full bg-slate-300 py-2 px-8 ">
-        <CgProfile className="text-2xl" />
-        <span>Profile</span>
+        <FiShoppingBag className="text-2xl" />
+        <span className=" text-gray-dark font-bold text-xl cursor-pointer">
+          <Link to="/">eCommerce</Link>
+        </span>
       </div>
       <div className="hover:bg-gray-light flex items-center gap-2  cursor-pointer border-b border-gray-medium  text-lg w-full bg-slate-300 py-2 px-8 ">
         <FiSettings className="text-2xl" />
-        <span>Settings</span>
+        <span className=" text-gray-dark font-bold text-xl cursor-pointer">
+          <Link to="/edit-profile">Edit Profile</Link>
+        </span>
       </div>
       <div className="hover:bg-gray-light flex items-center gap-2  cursor-pointer  text-lg w-full bg-slate-300 py-2 px-8 ">
         <HiOutlineLogout className="text-2xl" />
-        <span>Sign Out</span>
+        <span className=" text-gray-dark font-bold text-xl cursor-pointer">
+          Sign Out
+        </span>
       </div>
     </div>
   );

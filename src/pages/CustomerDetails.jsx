@@ -8,7 +8,7 @@ const CustomerDetails = () => {
         activeMenu ? "ml-72" : "w-full"
       }  mt-4 flex justify-center  gap-1`}
     >
-      <div className="w-full flex justify-center ">
+      <div className="w-full flex justify-center bg-white">
         <div className="w-[70%]  rounded-xl border-gray-dark shadow-2xl  p-8">
           <h2 className="text-2xl border-b-2 border-b-gray-medium  pb-4 font-extrabold text-black ">
             Customer Details
@@ -16,7 +16,7 @@ const CustomerDetails = () => {
           <div className="flex w-full justify-evenly items-center">
             <div>
               <div className="w-[20rem]  mb-1">
-                <div className="w-full mt-4">
+                <div className="w-full mt-4 ">
                   <img
                     className="rounded-full border-2 border-black w-full"
                     src="default.png"

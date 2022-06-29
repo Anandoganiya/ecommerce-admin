@@ -7,7 +7,7 @@ import { useStatusContext } from "../context/ContextProvider";
 const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useStatusContext();
   return (
-    <div className="ml-3 pb-10 h-screen border-r border-gray-medium shadow-xl">
+    <div className="p-3 h-screen border-r border-gray-medium shadow-xl bg-white">
       <div className="flex justify-between">
         <Link
           to={"/"}
