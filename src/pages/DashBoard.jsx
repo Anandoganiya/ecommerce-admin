@@ -25,7 +25,7 @@ const DashBoard = () => {
     <>
       <div className="flex">
         {activeMenu ? (
-          <div className="w-72 h-screen fixed bg-slate-100">
+          <div className="w-72 h-screen fixed z-10">
             <Sidebar />
           </div>
         ) : (

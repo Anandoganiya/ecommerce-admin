@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useStatusContext } from "../context/ContextProvider";
 import cardData from "../data/cardData";
 import BarGraph from "../components/charts/BarGraph";
@@ -7,12 +7,17 @@ import UserTransTable from "../components/tables/UserTransTable";
 
 const EcommerceStatic = () => {
   const { activeMenu } = useStatusContext();
+  const [resize, setResize] = useState(0);
+  window.addEventListener("resize", () => {
+    setResize(window.innerWidth);
+  });
+
   return (
     <>
       <div
         className={`${
           activeMenu ? "ml-72" : "w-full"
-        } flex justify-evenly items-center gap-3 flex-wrap lg:flex-nowrap mt-4`}
+        } flex md:justify-evenly justify-center flex-wrap  items-center sm:gap-3 gap-2  sm:flex-nowrap mt-4`}
       >
         {cardData.map((item) => {
           return (
@@ -37,25 +42,21 @@ const EcommerceStatic = () => {
         })}
       </div>
       <div
-        className={`${
-          activeMenu ? "ml-72" : "w-full"
-        }  mt-4 flex justify-evenly  gap-1`}
+        className={`${activeMenu ? "ml-72" : "w-full"}  mt-4 flex  ${
+          activeMenu ? "justify-start" : "justify-center"
+        }  ${resize <= 650 ? "flex-wrap" : "flex-nowrap"}   gap-1 `}
       >
-        <div className=" border shadow-xl border-gray-light ml-4 bg-white">
+        <div className="ml-4 border shadow-xl border-gray-light  bg-white  ">
           <h2 className="text-xl  font-semibold ml-4">Top Selling Products</h2>
           <BarGraph />
         </div>
-        <div className="border shadow-xl border-gray-light bg-white">
-          <h2 className="text-xl  font-semibold ml-4">Top Revenue Products</h2>
+        <div className="border shadow-xl border-gray-light bg-white  ">
+          <h2 className="text-xl  font-semibold ml-4 ">Top Revenue Products</h2>
           <PiGraph />
         </div>
       </div>
-      <div
-        className={`${
-          activeMenu ? "ml-72" : "w-full"
-        } border shadow-xl border-gray-light mx-auto mb-4  mt-4 md:w-[70%]`}
-      >
-        <div className="ml-4 bg-white">
+      <div className={`${activeMenu ? "ml-72" : "w-full"} `}>
+        <div className="border border-gray-light p-2 bg-white m-4 shadow-xl">
           <h2 className="text-xl font-semibold">Recent Order</h2>
           <UserTransTable />
         </div>

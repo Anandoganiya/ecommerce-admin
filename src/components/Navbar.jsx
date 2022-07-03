@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
   useEffect(() => {
     const handleResize = () => {
-      if (resize <= 900) {
+      if (resize <= 950) {
         setActiveMenu(false);
       } else {
         setActiveMenu(true);
